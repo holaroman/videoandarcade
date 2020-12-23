@@ -1,6 +1,6 @@
 package org.sla;
 
-public class Main {
+public class GameData {
 
     public static void main(String[] args){
 
