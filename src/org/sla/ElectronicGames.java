@@ -6,8 +6,8 @@ public class ElectronicGames {
     int AmountSold;
 
     public ElectronicGames(int releaseDate, String gameTitle, int amountSold) {
-        ReleaseDate = releaseDate;
-        GameTitle = gameTitle;
-        AmountSold = amountSold;
+        this.ReleaseDate = releaseDate;
+        this.GameTitle = gameTitle;
+        this.AmountSold = amountSold;
     }
 }
