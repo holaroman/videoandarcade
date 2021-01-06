@@ -2,9 +2,9 @@ package org.sla ;
 
 public class ElectronicGame {
 
-    int ReleaseDate;
-    String GameTitle;
-    int AmountSold;
+    private int ReleaseDate;
+    private String GameTitle;
+    private int AmountSold;
 
     public ElectronicGame(int releaseDate, String GameTitle, int amountSold) {
         this.ReleaseDate = releaseDate;
