@@ -36,4 +36,14 @@ public class ConsoleGame extends ElectronicGame {
     public void setPublisher(String publisher) {
         Publisher = publisher;
     }
+
+    public String toString() {
+        String description = "\""  + this.getGameTitle();
+        description = description + " Was released in " + this.getReleaseDate();
+        description = description + " It sold" +" "+ this.getAmountSold() +" "+ "copies.";
+        description = description + "The Genre was" + this.getGenre();
+        description = description + this.getDeveloper()+ " developed the game";
+        description = description + "The Publisher was" + this.getPublisher();
+        return description;
+    }
 }

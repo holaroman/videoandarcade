@@ -9,7 +9,7 @@ public class ArcadeGame extends ElectronicGame {
         super(releaseDate, gameTitle, amountSold);
 
         this.RevWithoutInf = RevWithoutInf;
-        this. RevWithInf = RevWithInf;
+        this.RevWithInf = RevWithInf;
     }
 
     public Double getRevWithoutInf() {
@@ -26,5 +26,14 @@ public class ArcadeGame extends ElectronicGame {
 
     public void setRevWithInf(Double revWithInf) {
         RevWithInf = revWithInf;
+    }
+
+    public String toString() {
+        String description = "\"" + this.getGameTitle();
+        description = description + " Was released in " + this.getReleaseDate();
+        description = description + " It sold" + " " + this.getAmountSold() + " " + "units.";
+        description = description + "The revenue without inflation was" + " " + this.getRevWithInf();
+        description = description + "The revenue without inflation was" + " " + this.getRevWithoutInf();
+        return description;
     }
 }

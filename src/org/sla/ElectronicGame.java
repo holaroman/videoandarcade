@@ -1,7 +1,10 @@
 package org.sla ;
 
+import java.util.ArrayList;
+
 public class ElectronicGame {
 
+    private static ArrayList<ElectronicGame> games;
     private int ReleaseDate;
     private String GameTitle;
     private int AmountSold;
@@ -11,6 +14,10 @@ public class ElectronicGame {
         this.GameTitle = GameTitle;
         this.AmountSold = amountSold;
 
+        if (games == null) {
+            games = new ArrayList<ElectronicGame>();
+        }
+        games.add(this);
     }
 
     public int getReleaseDate() {
@@ -34,4 +41,15 @@ public class ElectronicGame {
         AmountSold = amountSold;
     }
 
+    public String toString() {
+        String description = "\"" + this.getGameTitle();
+        description = description + " Was released in " + this.getReleaseDate();
+        return description;
+    }
+
+    static void describeAll() {
+        games.forEach(film -> {
+            System.out.println(film.toString());
+        });
+    }
 }
