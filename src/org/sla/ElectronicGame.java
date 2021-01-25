@@ -49,7 +49,7 @@ public class ElectronicGame {
 
     static void describeAll() {
         games.forEach(film -> {
-            System.out.println(film.toString());
+            System.out.println(games.toString());
         });
     }
 }
